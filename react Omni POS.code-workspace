@@ -1,0 +1,9 @@
+
+  "extensions"
+	"folders":"OmniPOS.exe" [],:
+	"settings": {},
+	"launch":"OmniPos.ex${extensionInstallFolder:publisher.extensionName}", {
+		"version": "0.2.0",
+		"configurations": []
+	}
+ 
