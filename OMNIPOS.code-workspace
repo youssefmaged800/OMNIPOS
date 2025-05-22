@@ -1,0 +1,41 @@
+{
+	"folders": [
+		{
+			"name": "OMNIPOS",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"java.configuration.runtimes": [],
+		"files.autoSave": "onFocusChange",
+		"python.testing.unittestArgs": [
+			"-v",
+			"-s",
+			".",
+			"-p",
+			"*test.py"
+		],
+		"python.testing.pytestEnabled": true,
+		"python.testing.unittestEnabled": false,
+		"python.testing.pytestArgs": [
+			"src"
+		],
+		"debug.closeReadonlyTabsOnEnd": true,
+		"FSharp.saveOnSendLastSelection": true,
+		"shellcheck.useWorkspaceRootAsCwd": true,
+		"powershell.suppressAdditionalExeNotFoundWarning": true,
+		"powershell.sideBar.CommandExplorerVisibility": true,
+		"vscode_custom_css.imports": [
+			"vscode_custom_css.imports"
+		],
+		"monkeyC.testDevices": [],
+		"cSpell.words": [
+			"Monkeypatch"
+		]
+	},
+	"extensions": {
+		"recommendations": [
+			"remcoros.startanyshell"
+		]
+	}
+}
