@@ -1,13 +1,13 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
         {
-            "name": "PowerShell Launch Current File",
-            "type": "PowerShell",
+            "type": "node",
             "request": "launch",
-            "script": "${file}",
-            "cwd": "${cwd}"
+            "name": "Run tailwindcss",
+            "runtimeExecutable": "tailwindcss",
+            "cwd": "${workspaceFolder}",
+            "args": []
         },
         {
             "type": "node",
@@ -121,12 +121,6 @@
             "args": []
         },
         {
-            "command": "npm start",
-            "name": "Run npm start",
-            "request": "launch",
-            "type": "node-terminal"
-        },
-        {
             "type": "node",
             "request": "launch",
             "name": "Run eslint",
@@ -153,19 +147,6 @@
             "type": "node"
         },
         {
-            "name": "Launch via NPM",
-            "request": "launch",
-            "runtimeArgs": [
-                "run-script",
-                "debug"
-            ],
-            "runtimeExecutable": "npm",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "type": "node"
-        },
-        {
             "address": "TCP/IP address of process to be debugged",
             "localRoot": "${workspaceFolder}",
             "name": "OMNIPOS",
@@ -184,12 +165,6 @@
             "config": "A500",
             "program": "",
             "kickstart": "<Enter path to KICKSTART 1.3 ROM here>"
-        },
-        {
-            "command": "npm start",
-            "name": "Run npm start",
-            "request": "launch",
-            "type": "node-terminal"
         },
         {
             "type": "cmake",
@@ -289,7 +264,6 @@
             "request": "launch",
             "name": "Run App",
             "complicationPublisherFolder": "${command:GetComplicationPublisherFolder}",
-  
             "stopAtLaunch": false,
             "device": "${command:GetTargetDevice}"
         },
